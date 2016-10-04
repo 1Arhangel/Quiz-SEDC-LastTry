@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionPairs.cs" />
+    <Compile Include="ConnectionSet.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YesNo.cs" />
