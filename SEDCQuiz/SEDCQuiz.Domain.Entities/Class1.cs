@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SEDCQuiz.Domain.Entities
 {
-    public class Class1
+    public class Games
     {
+        public int ID { get; set; }
+        public string Name { get; set; }
+
     }
 }
