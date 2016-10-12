@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SEDCQuiz.Domain.Entities
+namespace Interfaces
 {
-    public class Game
+    public class Class1
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-
     }
 }

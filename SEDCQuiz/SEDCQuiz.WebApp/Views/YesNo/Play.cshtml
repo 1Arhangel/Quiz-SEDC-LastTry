@@ -1,0 +1,15 @@
+﻿@model SEDCQuiz.Domain.Entities.YesNo
+@{
+    ViewBag.Title = "Play";
+}
+
+@Html.HiddenFor(model => model.ID);
+@Html.HiddenFor(model => model.Answer);
+
+<div style="border: 1px solid black">@Model.Question</div>    
+
+@Html.ActionLink("Yes", "Answer", "YesNo", new { @id = Model.ID, @answer ="yes"}, null )
+@Html.ActionLink("No", "Answer", "YesNo", new { @id = Model.ID, @answer = "no" }, null)
+
+<h2>Play</h2>
+

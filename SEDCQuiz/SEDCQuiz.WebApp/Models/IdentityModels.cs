@@ -29,5 +29,7 @@ namespace SEDCQuiz.WebApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<SEDCQuiz.Domain.Entities.YesNo> YesNoes { get; set; }
     }
 }

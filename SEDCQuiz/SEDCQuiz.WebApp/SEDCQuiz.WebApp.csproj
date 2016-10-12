@@ -170,9 +170,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\YesNoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610071147436_InitialCreate.cs" />
+    <Compile Include="Migrations\201610071147436_InitialCreate.Designer.cs">
+      <DependentUpon>201610071147436_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -234,6 +240,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\YesNo\Create.cshtml" />
+    <Content Include="Views\YesNo\Index.cshtml" />
+    <Content Include="Views\YesNo\Play.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +254,28 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SEDCQuiz.Domain.Entities\SEDCQuiz.Domain.Entities.csproj">
+      <Project>{c0b025fb-0a02-4043-a97d-487274527458}</Project>
+      <Name>SEDCQuiz.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SedcQuiz.Interfaces\SedcQuiz.Interfaces.csproj">
+      <Project>{ce3da3e4-0693-4cc7-978f-1aa0c4c55bff}</Project>
+      <Name>SedcQuiz.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SEDCQuiz.Repositories\SEDCQuiz.Repositories.csproj">
+      <Project>{a5669a9a-c454-4e54-bec0-e2288e4af062}</Project>
+      <Name>SEDCQuiz.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610071147436_InitialCreate.resx">
+      <DependentUpon>201610071147436_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
